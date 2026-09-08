@@ -90,6 +90,35 @@ code {
   letter-spacing: 0.04em;
 }
 
+.github-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.github-badge:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+  text-decoration: none;
+  box-shadow: 0 2px 12px var(--accent-dim);
+}
+
+.github-badge svg {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* Main */
 .main {
   flex: 1;
