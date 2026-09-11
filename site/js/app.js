@@ -62,7 +62,7 @@ function escapeAttr(s) {
 async function copyPassword(text) {
   try {
     await navigator.clipboard.writeText(text);
-    showToast(`Copied: ${text}`);
+    showToast('Copied to clipboard');
   } catch {
     const ta = document.createElement('textarea');
     ta.value = text;
@@ -70,7 +70,7 @@ async function copyPassword(text) {
     ta.select();
     document.execCommand('copy');
     document.body.removeChild(ta);
-    showToast(`Copied: ${text}`);
+    showToast('Copied to clipboard');
   }
 }
 
